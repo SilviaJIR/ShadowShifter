@@ -5,6 +5,9 @@ public class Win : MonoBehaviour
 {
     public GameObject outline;
     private ShadowDetect.ShadowDetect shadowScript;
+    public GameObject winObject;
+    public GameObject winPuzzle;
+    public GameObject puzzle1;
 
 
     private void Start()
@@ -22,6 +25,10 @@ public class Win : MonoBehaviour
         } else
         {
             Debug.Log("win!");
+            winObject.SetActive(true);
+            winPuzzle.SetActive(true);
+            puzzle1.SetActive(false);
+            outline.SetActive(false);
             
         }
     }
