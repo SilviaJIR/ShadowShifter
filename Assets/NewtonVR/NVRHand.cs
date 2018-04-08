@@ -810,6 +810,7 @@ namespace NewtonVR
                     for (int rendererIndex = 0; rendererIndex < GhostRenderers.Length; rendererIndex++)
                     {
                         NVRHelpers.SetTransparent(GhostRenderers[rendererIndex].material, transparentcolor);
+                        GhostRenderers[rendererIndex].shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
                     }
                 }
 
